@@ -1,10 +1,5 @@
-176. Second Highest Salary
-Solved
-Medium
-Topics
-Companies
-SQL Schema
-Pandas Schema
+#176. Second Highest Salary
+
 Table: Employee
 
 +-------------+------+
@@ -20,8 +15,8 @@ Each row of this table contains information about the salary of an employee.
 Write a solution to find the second highest distinct salary from the Employee table. If there is no second highest salary, return null (return None in Pandas)
 
 
+# Write your MySQL query statement below
 select
 (select distinct Salary 
 from Employee order by salary desc 
 limit 1 offset 1) 
-as SecondHighestSalary;
